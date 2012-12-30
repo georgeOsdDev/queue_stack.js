@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/georgeOsdDev/queue_stack.js.png?branch=master)](http://travis-ci.org/georgeOsdDev/queue_stack.js)
 # queue_stack.js
 Some Queue and Stack utility for both server-side and client-side javascript.
 
