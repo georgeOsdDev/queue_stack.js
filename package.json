@@ -1,0 +1,31 @@
+{
+  "name": "queue_stack.js",
+  "version": "0.0.1",
+  "description": "Queue and Stack Utility for javascript.",
+  "main": "queue_stack.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coffee-script": "1.3.x",
+    "coffeelint": ">=0.5.2",
+    "uglify-js": ">=0.8.7",
+    "chai": "~1.4.2",
+    "mocha": "~1.7.4"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgeosddev/queue_stack.js"
+  },
+  "keywords": [
+    "queue",
+    "stack"
+  ],
+  "author": "Takeharu.Oshida",
+  "license": "MIT"
+}
