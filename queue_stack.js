@@ -10,7 +10,9 @@ Copyright © 2012 Takeharu.Oshida
 (function() {
   "use strict";
 
-  var AbstructQueueStack, Queue, Stack, queue_stack, root;
+  var AbstructQueueStack, Queue, Stack, queue_stack, root,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   root = this;
 
@@ -53,9 +55,9 @@ Copyright © 2012 Takeharu.Oshida
 
   })();
 
-  Queue = (function() {
+  Queue = (function(_super) {
 
-    Queue.prototype = new AbstructQueueStack();
+    __extends(Queue, _super);
 
     function Queue() {
       var _array;
@@ -88,11 +90,11 @@ Copyright © 2012 Takeharu.Oshida
 
     return Queue;
 
-  })();
+  })(AbstructQueueStack);
 
-  Stack = (function() {
+  Stack = (function(_super) {
 
-    Stack.prototype = new AbstructQueueStack();
+    __extends(Stack, _super);
 
     function Stack() {
       var _array;
@@ -125,7 +127,7 @@ Copyright © 2012 Takeharu.Oshida
 
     return Stack;
 
-  })();
+  })(AbstructQueueStack);
 
   queue_stack = {
     createQueue: function() {

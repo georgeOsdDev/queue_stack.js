@@ -32,8 +32,8 @@ class AbstructQueueStack
   toString: (separator=",")->
     @_getArray().join(separator)
 
-class Queue
-  Queue.prototype = new AbstructQueueStack()
+class Queue extends AbstructQueueStack
+  # Queue.prototype = new AbstructQueueStack()
   constructor: ->
     _array = []
     @_getArray = ->
@@ -52,8 +52,8 @@ class Queue
   peek: ->
     if @isEmpty() then undefined else @_getArray()[0]
 
-class Stack
-  Stack.prototype = new AbstructQueueStack()
+class Stack extends AbstructQueueStack
+  # Stack.prototype = new AbstructQueueStack()
   constructor: ->
     _array = []
     @_getArray = ->
